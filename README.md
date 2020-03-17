@@ -1,1 +1,1 @@
-Example Protocol implementation in elixir.
+Example Protocol and Behavior implementation in elixir.

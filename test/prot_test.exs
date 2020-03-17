@@ -22,4 +22,22 @@ defmodule ProtTest do
   test "Other man greets the world" do
     assert %{name: "everybody"} |> Prot.greet() == "Hello everybody"
   end
+
+  test "English man behavior" do
+    assert "everybody" |> EnglishCitizen.greet() == "Heylo everybody"
+  end
+
+  test "French man behavior" do
+    assert "monsieur" |> FrenchCitizen.greet() == "Bonjour monsieur"
+  end
+
+
+  test "Spanish man behavior" do
+    assert "senor" |> SpanishCitizen.greet() == "Ola senor"
+  end
+
+
+  test "Tamil man behavior" do
+    assert "thalaiva" |> TamilCitizen.greet() == "Vanakkam thalaiva"
+  end
 end
